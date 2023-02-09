@@ -58,6 +58,12 @@ nx generate @nrwl/angular:library list --style=scss --directory=web/articles/fea
 nx generate @nrwl/nest:library articles --directory=api --buildable --controller --service --setParserOptionsProject --strict --tags='platform:node, type:feature, scope:articles'
 ```
 
+6. Add Models lib
+
+```
+nx generate @nrwl/workspace:library models --directory=shared --setParserOptionsProject --skipBabelrc --no-strict --tags='type:util, scope:shared'
+```
+
 ## Articles
 
 ```typescript

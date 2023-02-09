@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@nx-store/api/articles": ["libs/api/articles/src/index.ts"],
+      "@nx-store/shared/models": ["libs/shared/models/src/index.ts"],
       "@nx-store/web/articles/feature/list": [
         "libs/web/articles/feature/list/src/index.ts"
       ]
