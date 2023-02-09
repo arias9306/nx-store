@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-store/api/articles": ["libs/api/articles/src/index.ts"],
       "@nx-store/web/articles/feature/list": [
         "libs/web/articles/feature/list/src/index.ts"
       ]
