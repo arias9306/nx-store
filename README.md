@@ -25,6 +25,7 @@ nx g @ngrx/store:ng-add --project=web
 ```
 
 Install @ngrx/effects
+
 ```
 npm install @ngrx/effects --save
 ```
@@ -33,4 +34,14 @@ Run the ng add schematic
 
 ```
 nx g @ngrx/effects:ng-add --project=web
+```
+
+3. Add Api
+
+```
+npm install -D @nrwl/nest
+```
+
+```
+nx generate @nrwl/nest:application api --frontendProject=web --setParserOptionsProject --tags='platform:node, type:app'
 ```
