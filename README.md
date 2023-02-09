@@ -11,3 +11,26 @@
 ```
 nx generate @nrwl/angular:application web --style=scss --addTailwind --prefix=nx-store --routing --setParserOptionsProject --tags='platform:web, type:app'
 ```
+
+2. Install ngrx
+
+```
+npm install @ngrx/store --save
+```
+
+Run the ng add schematic
+
+```
+nx g @ngrx/store:ng-add --project=web
+```
+
+Install @ngrx/effects
+```
+npm install @ngrx/effects --save
+```
+
+Run the ng add schematic
+
+```
+nx g @ngrx/effects:ng-add --project=web
+```
