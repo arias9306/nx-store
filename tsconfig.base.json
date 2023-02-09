@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-store/web/articles/feature/list": [
+        "libs/web/articles/feature/list/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

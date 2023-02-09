@@ -45,3 +45,41 @@ npm install -D @nrwl/nest
 ```
 nx generate @nrwl/nest:application api --frontendProject=web --setParserOptionsProject --tags='platform:node, type:app'
 ```
+
+4. Add Feature lib Articles
+
+```
+nx generate @nrwl/angular:library list --style=scss --directory=web/articles/feature --addTailwind --buildable --changeDetection=OnPush --compilationMode=full --lazy --prefix=nx-store --routing --setParserOptionsProject --tags='platform:web,type:feature, scope:articles'
+```
+
+## Articles
+
+
+```typescript
+type Article {
+  id: number;
+  title: string;
+  description: string;
+  tags: string;
+  author: Author;
+  createdAt?: Date;
+  updatedAt: Date;
+}
+
+export interface Author {
+  id?: number;
+  bio: string;
+  email: string;
+  image: string;
+  username: string;
+  following: boolean;
+}
+```
+
+
+CRUD
+
+
+
+
+
