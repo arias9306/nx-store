@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
+import { AipArticlesModule } from '@nx-store/api/articles';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  imports: [],
+  imports: [AipArticlesModule],
   controllers: [AppController],
   providers: [AppService],
 })

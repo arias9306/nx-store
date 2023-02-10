@@ -7,4 +7,4 @@ import { ApiArticlesService } from './api-articles.service';
   providers: [ApiArticlesService],
   exports: [ApiArticlesService],
 })
-export class ApiArticlesModule {}
+export class AipArticlesModule {}
