@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -15,6 +16,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
     StoreModule.forRoot({}, {}),
     EffectsModule.forRoot([]),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

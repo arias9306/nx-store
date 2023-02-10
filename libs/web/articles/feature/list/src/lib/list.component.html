@@ -1,0 +1,7 @@
+<p>list works!</p>
+
+<div class="container">
+  <ul *ngFor="let item of articles$ | async">
+    <li>{{ item.title }}</li>
+  </ul>
+</div>

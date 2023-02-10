@@ -61,7 +61,19 @@ nx generate @nrwl/nest:library articles --directory=api --buildable --controller
 6. Add Models lib
 
 ```
-nx generate @nrwl/workspace:library models --directory=shared --setParserOptionsProject --skipBabelrc --no-strict --tags='type:util, scope:shared'
+nx generate @nrwl/workspace:library models --directory=shared --buildable --setParserOptionsProject --skipBabelrc --no-strict --tags='type:util, scope:shared'
+```
+
+7. Add the DataAccess lib for the Articles Scope
+
+```
+nx generate @nrwl/angular:library data-access --style=none --directory=web/articles --buildable --changeDetection=OnPush --prefix=nx-store --tags='platform:web, type:data-access, scope:articles'
+```
+
+8. Add the Articles Service to call the API
+
+```
+nx generate @schematics/angular:service articles --project=web-articles-data-access --path=libs/web/articles/data-access/src/lib/services
 ```
 
 ## Articles
